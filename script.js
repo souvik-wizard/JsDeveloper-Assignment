@@ -1,4 +1,5 @@
 let chemicals = [];
+let unsavedChanges = []; // New array to track unsaved changes
 
 // Fetch the JSON data from the external file or local storage
 function loadChemicalData() {
@@ -170,10 +171,28 @@ document.getElementById("table-body").addEventListener("click", (event) => {
 function refreshData() {
   loadChemicalData();
 }
+// Function to save edits to unsavedChanges array
+function editCell(rowIndex, field, newValue) {
+  // Update the chemicals array
+  chemicals[rowIndex][field] = newValue;
 
-// Button: Save data (local storage is updated immediately when editing)
+  // Keep track of changes
+  unsavedChanges[rowIndex] = {
+    ...chemicals[rowIndex], // Copy the entire object to unsavedChanges
+    [field]: newValue, // Only update the field being edited
+  };
+}
+
+// Button: Save data (save the unsaved changes to local storage)
 function saveData() {
-  saveToLocalStorage();
+  // Only save if there are unsaved changes
+  if (unsavedChanges.length > 0) {
+    unsavedChanges.forEach((change, index) => {
+      chemicals[index] = change; // Apply changes to the main array
+    });
+    saveToLocalStorage(); // Save to local storage
+    unsavedChanges = []; // Clear unsaved changes after saving
+  }
 }
 
 window.onload = loadChemicalData;
