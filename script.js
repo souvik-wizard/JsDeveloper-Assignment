@@ -142,15 +142,6 @@ function moveRowDown() {
   }
 }
 
-// Function to programmatically select a row by index
-// function selectRow(index) {
-//   const rows = document.querySelectorAll("#table-body tr");
-//   if (rows[index]) {
-//     rows[index].classList.add("selected");
-//     rows[index].querySelector('input[type="checkbox"]').checked = true; // Keep checkbox checked
-//   }
-// }
-
 // Button: Delete selected row
 function deleteRow() {
   const selectedRow = getSelectedRow();
