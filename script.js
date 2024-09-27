@@ -160,11 +160,28 @@ function selectRow(index) {
   }
 }
 
-// Handle row selection
+// Function to handle row selection and toggle the icon color
 document.getElementById("table-body").addEventListener("click", (event) => {
   const rows = document.querySelectorAll("#table-body tr");
-  rows.forEach((row) => row.classList.remove("selected"));
-  event.target.parentNode.classList.add("selected");
+  rows.forEach((row) => {
+    // Remove the selected class and change icon color
+    row.classList.remove("selected");
+    const icon = row.querySelector(".fa-check");
+    if (icon) {
+      icon.classList.remove("selected-icon");
+      icon.classList.add("deselected-icon");
+    }
+  });
+
+  const selectedRow = event.target.closest("tr");
+  if (selectedRow) {
+    selectedRow.classList.add("selected");
+    const icon = selectedRow.querySelector(".fa-check");
+    if (icon) {
+      icon.classList.remove("deselected-icon");
+      icon.classList.add("selected-icon");
+    }
+  }
 });
 
 // Button: Refresh data (reload from localStorage)

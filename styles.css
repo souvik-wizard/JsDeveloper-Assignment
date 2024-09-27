@@ -64,24 +64,30 @@ body {
   th:hover {
     background-color: #ececec;
   }
-  /* tr i{
+  tr i{
     color:#A9A9A4; 
-  } */
+  }
    
   tr.selected {
     background-color: #E6E8FF;
     color:#0030C7
   }
   
-  td:first-child, th:first-child {
-    /* text-align: center; */
-    /* width: 40px; */
+  /* td:first-child, th:first-child {
+    text-align: center;
+    width: 40px;
   }
   
   th:first-child {
-    /* width: 50px; */
-  }
-  
+    width: 50px;
+  } */
+  .selected-icon {
+    color: #0032C7; /* Color when selected */
+}
+
+.deselected-icon {
+    color: #A9A9A4; /* Color when not selected */
+}
   /* Checkbox in the first column */
   td:first-child {
     text-align: center;
