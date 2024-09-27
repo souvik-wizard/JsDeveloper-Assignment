@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Mono:wght@400&display=swap');
+
+body {
+    font-family: "Fira Mono", monospace;;
+    margin: 20px;
+    width: 90%;
+    margin: auto;
+    
+  }
+  
+  h5 {
+    font-size: 26px;
+  }
+  .header{
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  button {
+    background-color: transparent;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    margin-right: 5px;
+    font-size: 20px;
+  }
+  
+  button:hover {
+    background-color: #E6E8FF;
+    border-radius: 100%;
+  }
+  
+
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+
+  }
+  tr th:nth-child(3), tr td:nth-child(3){
+    border-right: 1px solid #ccc;
+  }
+  .unit{
+    font-weight: lighter;
+    color: #C0C0BB;
+  }
+
+  th, td {
+    padding: 10px 12px;
+    text-align: left;
+    /* border: 1px solid #ccc; */
+  }
+  
+  th {
+    background-color: #FAFAF5;
+    cursor: pointer;
+    position: relative;
+    /* padding-bottom: 2rem; */
+  }
+  
+  th:hover {
+    background-color: #ececec;
+  }
+  /* tr i{
+    color:#A9A9A4; 
+  } */
+   
+  tr.selected {
+    background-color: #E6E8FF;
+    color:#0030C7
+  }
+  
+  td:first-child, th:first-child {
+    /* text-align: center; */
+    /* width: 40px; */
+  }
+  
+  th:first-child {
+    /* width: 50px; */
+  }
+  
+  /* Checkbox in the first column */
+  td:first-child {
+    text-align: center;
+  }
+  
+  td:focus {
+    outline: 1px solid #0032C7;
+    background-color: white;
+  }

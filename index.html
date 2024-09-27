@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chemical Supplies</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+  <div class="header">
+    <h5>Chemical Supplies</h5>
+    <div class="toolbar">
+      <button onclick="addRow()">
+        ➕
+      </button>
+      <button onclick="moveRowUp()">
+       🔼
+      </button>
+      <button  onclick="moveRowDown()">
+        🔽
+      </button>
+      <button  onclick="deleteRow()">
+        🗑️
+      </button>
+      <button onclick="refreshData()">
+        🔄
+      </button>
+      <button onclick="saveData()" >
+        💾
+      </button>
+    </div>
+  </div>
+  
+  <table id="chemical-table">
+    <thead>
+      <tr>
+        <th> <i class="fa-solid fa-check selected" style="font-size: 20px;"></i></th>
+        <th onclick="sortTable(0)"></th>
+        <th onclick="sortTable(1)">Chemical Name</th>
+        <th onclick="sortTable(2)">Vendor</th>
+        <th onclick="sortTable(3)">Density <br> <span class="unit">g/m³ </span></th>
+        <th onclick="sortTable(4)">Viscosity <br><span class="unit">m²/s</span> </th>
+        <th onclick="sortTable(5)">Packaging</th>
+        <th onclick="sortTable(6)">Pack Size</th>
+        <th onclick="sortTable(7)">Unit</th>
+        <th onclick="sortTable(8)">Quantity</th>
+      </tr>
+    </thead>
+    <tbody id="table-body"></tbody>
+    
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
