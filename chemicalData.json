@@ -61,7 +61,7 @@
       "density": 4535.26,
       "viscosity": 66.76,
       "packaging": "N/A",
-      "packSize": null,
+      "packSize": "N/A",
       "unit": "t",
       "quantity": 6272.34
     },

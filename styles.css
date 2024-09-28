@@ -27,11 +27,6 @@ body {
     font-size: 20px;
   }
   
-  button:hover {
-    background-color: #E6E8FF;
-    border-radius: 100%;
-  }
-  
 
   table {
     width: 100%;
@@ -51,14 +46,12 @@ body {
   th, td {
     padding: 10px 12px;
     text-align: left;
-    /* border: 1px solid #ccc; */
   }
   
   th {
     background-color: #FAFAF5;
     cursor: pointer;
     position: relative;
-    /* padding-bottom: 2rem; */
   }
   
   th:hover {
@@ -72,26 +65,14 @@ body {
     background-color: #E6E8FF;
     color:#0030C7
   }
-  
-  /* td:first-child, th:first-child {
-    text-align: center;
-    width: 40px;
-  }
-  
-  th:first-child {
-    width: 50px;
-  } */
+
   .selected-icon {
-    color: #0032C7; /* Color when selected */
+    color: #0032C7;
 }
 
 .deselected-icon {
-    color: #A9A9A4; /* Color when not selected */
+    color: #A9A9A4;
 }
-  /* Checkbox in the first column */
-  td:first-child {
-    text-align: center;
-  }
   
   td:focus {
     outline: 1px solid #0032C7;
