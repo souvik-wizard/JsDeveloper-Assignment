@@ -31,13 +31,13 @@ Open index.html in a Web Browser: Simply double-click the index.html file to lau
 
 Click on the table cells to edit the content directly.
 Changes are automatically saved to localStorage after editing.
-Use the Toolbar:
 
-Add Row: Adds a new chemical entry with default values.
-Move Row Up/Down: Moves the selected row up or down.
-Delete Row: Deletes the currently selected row.
-Refresh Data: Reloads data from localStorage (or from chemicalData.json if no local data is available).
-Save Data: Manually saves any unsaved changes.
+### Use the Toolbar:
+- Add Row: Adds a new chemical entry with default values. 
+- Move Row Up/Down: Moves the selected row up or down.
+- Delete Row: Deletes the currently selected row.
+- Refresh Data: Reloads data from localStorage (or from chemicalData.json if no local data is available).
+- Save Data: Manually saves any unsaved changes.
 
 ### Dependencies
 Font Awesome: Used for toolbar icons. Included via CDN in the HTML file.
