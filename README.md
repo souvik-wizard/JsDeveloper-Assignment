@@ -1,8 +1,8 @@
 ## Chemical Supplies Table
-This project is a web application that manages a list of chemical supplies in a table format. It allows users to add, edit, move a row up and down, delete, and sort chemical records. The application supports mobile responsiveness, with scrolling functionality for the table on smaller screens (mobile).
+This project is a web-based application that manages a list of chemical supplies in a table format. It allows users to add, edit, move a row up and down, delete, and sort chemical records. The application supports mobile responsiveness, with scrolling functionality for the table on smaller screens (mobile).
 
 ### Features
-- Add, Edit, Delete Rows: Users can add new chemical supplies, edit existing data, and delete rows.
+- Add, Edit, Delete Rows: Users can add new chemical supplies, edit existing data, and delete rows (locally only as the browser doesn't have access to manipulate data directly, that is why I'm using a local storage approach).
 - Sorting: Click on table headers to sort columns in ascending or descending order (Alphabetically or Numerically).
 - The user can move a row up or down as per need.
 - Local Storage Support: Changes made to the table are saved to local storage.
@@ -25,7 +25,7 @@ Clone the Repository
 git clone https://github.com/souvik-wizard/JsDeveloper-Assignment.git
 cd JsDeveloper-Assignment
 ```
-Open index.html in a Web Browser: Simply double-click the index.html file to launch the application in your default browser. (Or you can use live server extension for VS Code)
+Open index.html in a Web Browser: Simply double-click the index.html file to launch the application in your default browser. (Or you can use a live server extension for VS Code)
 
 ### Edit Table Data:
 
