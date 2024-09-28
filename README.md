@@ -5,7 +5,6 @@ This project is a web-based application that manages a list of chemical supplies
 - Add, Edit, Delete Rows: Users can add new chemical supplies, edit existing data, and delete rows (locally only as the browser doesn't have access to manipulate data directly, that is why I'm using a local storage approach).
 - Sorting: Click on table headers to sort columns in ascending or descending order (Alphabetically or Numerically).
 - The user can move a row up or down as per need.
-- Local Storage Support: Changes made to the table are saved to local storage.
 - Toolbar with Icons: Toolbar buttons for adding, moving, deleting, refreshing, and saving rows.
 - Mobile-Friendly/Responsiveness: Table content scrolls horizontally on mobile devices.
 - Persistent Edits: Edited data is automatically saved to local storage and retrieved on page load (until the user clears the local storage).
