@@ -9,7 +9,7 @@
 </head>
 <body>
   <div class="header">
-    <h5>Chemical Supplies</h5>
+    <h1>Chemical Supplies</h1>
     <div class="toolbar">
       <button onclick="addRow()">
         <i class="fa-solid fa-circle-plus" style="color: #0032C7;"></i>
@@ -32,24 +32,25 @@
     </div>
   </div>
   
-  <table id="chemical-table">
-    <thead>
-      <tr>
-        <th> <i class="fa-solid fa-check selected" style="font-size: 20px;"></i></th>
-        <th onclick="sortTable(0)"></th>
-        <th onclick="sortTable(1)">Chemical Name</th>
-        <th onclick="sortTable(2)">Vendor</th>
-        <th onclick="sortTable(3)">Density <br> <span class="unit">g/m³ </span></th>
-        <th onclick="sortTable(4)">Viscosity <br><span class="unit">m²/s</span> </th>
-        <th onclick="sortTable(5)">Packaging</th>
-        <th onclick="sortTable(6)">Pack Size</th>
-        <th onclick="sortTable(7)">Unit</th>
-        <th onclick="sortTable(8)">Quantity</th>
-      </tr>
-    </thead>
-    <tbody id="table-body"></tbody>
-    
-  </table>
+  <div class="table-container">
+    <table id="chemical-table">
+      <thead>
+        <tr>
+          <th><i class="fa-solid fa-check selected" style="font-size: 20px;"></i></th>
+          <th onclick="sortTable(0)"></th>
+          <th onclick="sortTable(1)">Chemical Name</th>
+          <th onclick="sortTable(2)">Vendor</th>
+          <th onclick="sortTable(3)">Density <br> <span class="unit">g/m³</span></th>
+          <th onclick="sortTable(4)">Viscosity <br><span class="unit">m²/s</span></th>
+          <th onclick="sortTable(5)">Packaging</th>
+          <th onclick="sortTable(6)">Pack Size</th>
+          <th onclick="sortTable(7)">Unit</th>
+          <th onclick="sortTable(8)">Quantity</th>
+        </tr>
+      </thead>
+      <tbody id="table-body"></tbody>
+    </table>
+  </div>
 
   <script src="script.js"></script>
 </body>
