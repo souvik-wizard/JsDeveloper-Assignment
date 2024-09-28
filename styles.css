@@ -5,7 +5,6 @@ body {
   margin: auto;
 }
 
-
 .header {
   height: 80px;
   display: flex;
@@ -52,6 +51,7 @@ th {
   background-color: #FAFAF5;
   cursor: pointer;
   position: relative;
+  text-wrap:nowrap;
 }
 
 th:hover {

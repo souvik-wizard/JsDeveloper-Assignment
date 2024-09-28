@@ -91,7 +91,7 @@ function addRow() {
   const newRow = {
     id: chemicals.length + 1,
     chemicalName: "New Chemical",
-    vendor: "Unknown Vendor",
+    vendor: "Unknown",
     density: 0,
     viscosity: 0,
     packaging: "Unknown",
