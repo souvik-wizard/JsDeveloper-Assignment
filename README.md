@@ -25,6 +25,7 @@ git clone https://github.com/souvik-wizard/JsDeveloper-Assignment.git
 cd JsDeveloper-Assignment
 ```
 Open index.html in a Web Browser: Simply double-click the index.html file to launch the application in your default browser. (Or you can use a live server extension for VS Code)
+Also, all js functions have commented notes about what they do.
 
 ### Edit Table Data:
 
